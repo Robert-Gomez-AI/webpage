@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robert Gomez — Mathematician · AI Researcher · CTO</title>
+    <meta name="description" content="Mathematician and CTO at AIMedic. Leading research in generative models, computational neuroscience, and quantum computing. Making AI accessible, democratic, and trustworthy.">
+    <meta name="keywords" content="Robert Gomez, AI, Machine Learning, Deep Learning, Mathematician, CTO, AIMedic, Generative Models, Consultant">
+    <meta property="og:title" content="Robert Gomez — Mathematician · AI Researcher · CTO">
+    <meta property="og:description" content="Making artificial intelligence accessible, democratic, trustworthy, and a force for good.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cursor glow effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">{</span>
+                <span class="logo-text">RG</span>
+                <span class="logo-bracket">}</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#about" class="nav-link">Sobre mí</a>
+                <a href="#expertise" class="nav-link">Expertise</a>
+                <a href="#projects" class="nav-link">Proyectos</a>
+                <a href="#publications" class="nav-link">Research</a>
+                <a href="#contact" class="nav-link">Contacto</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <canvas id="neuralCanvas"></canvas>
+        <div class="hero-content">
+            <div class="hero-badge animate-in">
+                <span class="badge-dot"></span>
+                Disponible para consultoría & proyectos
+            </div>
+            <h1 class="hero-title animate-in">
+                <span class="hero-line">Robert</span>
+                <span class="hero-line hero-line--accent">Gomez</span>
+            </h1>
+            <p class="hero-subtitle animate-in">
+                <span class="typed-text" id="typedText"></span>
+                <span class="typed-cursor">|</span>
+            </p>
+            <p class="hero-description animate-in">
+                Haciendo la inteligencia artificial <em>accesible, democrática, confiable</em><br>
+                y una fuerza para el bien.
+            </p>
+            <div class="hero-cta animate-in">
+                <a href="#contact" class="btn btn-primary">
+                    <span>Trabajemos juntos</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#projects" class="btn btn-ghost">
+                    <span>Ver proyectos</span>
+                </a>
+            </div>
+            <div class="hero-stats animate-in">
+                <div class="stat">
+                    <span class="stat-number" data-target="33">0</span>
+                    <span class="stat-label">Open Source Projects</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="64">0</span>
+                    <span class="stat-label">GitHub Followers</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-icon">∞</span>
+                    <span class="stat-label">Curiosidad</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">01 — Sobre mí</span>
+                <h2 class="section-title">Donde las matemáticas<br>encuentran la <span class="gradient-text">inteligencia artificial</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p class="about-lead">
+                        Soy matemático, investigador en IA y CTO en <strong>AIMedic</strong>, donde lidero
+                        la intersección entre tecnología de salud e inteligencia artificial.
+                    </p>
+                    <p>
+                        Dirijo un grupo de investigación en <strong>modelos generativos</strong>, explorando
+                        las fronteras de la IA desde la geometría diferencial hasta la computación cuántica.
+                        Mi trabajo abarca desde la teoría pura — geometría de Riemann, análisis global —
+                        hasta aplicaciones que transforman industrias.
+                    </p>
+                    <p>
+                        Creo en una IA que sea herramienta de todos, no privilegio de pocos. Cada línea de
+                        código, cada paper, cada clase que doy busca democratizar el acceso al conocimiento
+                        más poderoso de nuestra era.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight">
+                            <div class="highlight-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                            </div>
+                            <div>
+                                <strong>CTO @ AIMedic</strong>
+                                <span>Liderando innovación en HealthTech con IA</span>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <div class="highlight-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                            </div>
+                            <div>
+                                <strong>Research Lead</strong>
+                                <span>Grupo de investigación en modelos generativos</span>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <div class="highlight-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                            </div>
+                            <div>
+                                <strong>Educador</strong>
+                                <span>Democratizando el conocimiento en IA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual reveal">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <div class="code-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <span class="code-filename">robert.py</span>
+                        </div>
+                        <pre class="code-body"><code><span class="code-keyword">class</span> <span class="code-class">Robert</span>:
+    <span class="code-keyword">def</span> <span class="code-func">__init__</span>(self):
+        self.role = <span class="code-string">"CTO @ AIMedic"</span>
+        self.research = <span class="code-string">"Generative Models"</span>
+        self.background = <span class="code-string">"Mathematics"</span>
+        self.passion = [
+            <span class="code-string">"Deep Generative Modeling"</span>,
+            <span class="code-string">"Computational Neuroscience"</span>,
+            <span class="code-string">"Quantum Computing"</span>,
+            <span class="code-string">"Information Geometry"</span>,
+        ]
+
+    <span class="code-keyword">def</span> <span class="code-func">mission</span>(self):
+        <span class="code-keyword">return</span> <span class="code-string">"""
+        Making AI accessible,
+        democratic, trustworthy,
+        and a force for good.
+        """</span></code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section class="section expertise" id="expertise">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">02 — Expertise</span>
+                <h2 class="section-title">Áreas de<br><span class="gradient-text">especialización</span></h2>
+            </div>
+            <div class="expertise-grid">
+                <div class="expertise-card reveal" data-tilt>
+                    <div class="card-glow"></div>
+                    <div class="card-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="3"/><circle cx="12" cy="5" r="1.5"/><circle cx="18.5" cy="8.5" r="1.5"/><circle cx="18.5" cy="15.5" r="1.5"/><circle cx="12" cy="19" r="1.5"/><circle cx="5.5" cy="15.5" r="1.5"/><circle cx="5.5" cy="8.5" r="1.5"/>
+                            <line x1="12" y1="6.5" x2="12" y2="9"/><line x1="17.2" y1="9.5" x2="14.6" y2="10.8"/><line x1="17.2" y1="14.5" x2="14.6" y2="13.2"/><line x1="12" y1="17.5" x2="12" y2="15"/><line x1="6.8" y1="14.5" x2="9.4" y2="13.2"/><line x1="6.8" y1="9.5" x2="9.4" y2="10.8"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Deep Generative Modeling</h3>
+                    <p class="card-desc">Modelos de difusión, GANs, VAEs y arquitecturas generativas de última generación. Investigación y aplicación en producción.</p>
+                    <div class="card-tags">
+                        <span>Diffusion Models</span>
+                        <span>GANs</span>
+                        <span>VAEs</span>
+                        <span>Flow Models</span>
+                    </div>
+                </div>
+
+                <div class="expertise-card reveal" data-tilt>
+                    <div class="card-glow"></div>
+                    <div class="card-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2a4 4 0 0 1 4 4c0 1.5-.8 2.8-2 3.5v1.5h-4v-1.5c-1.2-.7-2-2-2-3.5a4 4 0 0 1 4-4z"/>
+                            <path d="M10 11v2a2 2 0 1 0 4 0v-2"/><path d="M8 15c-3 1-5 3.5-5 6h18c0-2.5-2-5-5-6"/>
+                            <circle cx="7" cy="18" r="1"/><circle cx="17" cy="18" r="1"/><circle cx="12" cy="20" r="1"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Computational Neuroscience</h3>
+                    <p class="card-desc">Del spike al grupo fundamental. Modelado neuronal, análisis topológico de redes neuronales y representaciones geométricas del cerebro.</p>
+                    <div class="card-tags">
+                        <span>Neural Coding</span>
+                        <span>Topology</span>
+                        <span>Brain Modeling</span>
+                    </div>
+                </div>
+
+                <div class="expertise-card reveal" data-tilt>
+                    <div class="card-glow"></div>
+                    <div class="card-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="9"/><path d="M12 3c-4.97 0-9 4.03-9 9"/><path d="M12 3c4.97 0 9 4.03 9 9"/>
+                            <circle cx="12" cy="12" r="3"/><path d="M12 9v-3M12 15v3M9 12H6M15 12h3"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Quantum Computing</h3>
+                    <p class="card-desc">Modelos generativos cuánticos y computación cuántica aplicada a machine learning. Explorando las fronteras del cómputo.</p>
+                    <div class="card-tags">
+                        <span>Quantum ML</span>
+                        <span>Qubits</span>
+                        <span>Quantum Gates</span>
+                    </div>
+                </div>
+
+                <div class="expertise-card reveal" data-tilt>
+                    <div class="card-glow"></div>
+                    <div class="card-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">HealthTech & AI</h3>
+                    <p class="card-desc">CTO en AIMedic. Diseño y despliegue de soluciones de IA en el sector salud: diagnóstico, predicción y análisis clínico.</p>
+                    <div class="card-tags">
+                        <span>Medical AI</span>
+                        <span>Clinical ML</span>
+                        <span>HealthTech</span>
+                    </div>
+                </div>
+
+                <div class="expertise-card reveal" data-tilt>
+                    <div class="card-glow"></div>
+                    <div class="card-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3 3h18v18H3z"/><path d="M3 9h18M9 3v18M15 9v12"/>
+                            <circle cx="6" cy="6" r="1"/><circle cx="12" cy="6" r="1"/><circle cx="18" cy="6" r="1"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Information Geometry</h3>
+                    <p class="card-desc">Geometría de Riemann aplicada a espacios de probabilidad. Análisis global, variedades estadísticas y conexiones en ML.</p>
+                    <div class="card-tags">
+                        <span>Riemannian</span>
+                        <span>Manifolds</span>
+                        <span>Statistical</span>
+                    </div>
+                </div>
+
+                <div class="expertise-card reveal" data-tilt>
+                    <div class="card-glow"></div>
+                    <div class="card-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M16 18l6-6-6-6"/><path d="M8 6l-6 6 6 6"/>
+                            <line x1="14" y1="4" x2="10" y2="20"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">LLMOps & MLOps</h3>
+                    <p class="card-desc">Frameworks para operacionalizar modelos de lenguaje y machine learning. Del prototipo a producción con arquitecturas escalables.</p>
+                    <div class="card-tags">
+                        <span>LLMOps</span>
+                        <span>RAG</span>
+                        <span>Deployment</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">03 — Proyectos</span>
+                <h2 class="section-title">Open Source &<br><span class="gradient-text">Investigación</span></h2>
+                <p class="section-subtitle">Selección de proyectos que reflejan mi trabajo en la intersección de matemáticas, IA y educación.</p>
+            </div>
+            <div class="projects-grid">
+                <a href="https://github.com/DeeppunkAI/wittgenlab" target="_blank" rel="noopener" class="project-card project-card--featured reveal">
+                    <div class="project-number">01</div>
+                    <div class="project-content">
+                        <div class="project-org">DeeppunkAI</div>
+                        <h3 class="project-title">WittgenLab</h3>
+                        <p class="project-desc">Framework de LLMOps para operacionalizar modelos de lenguaje. Arquitectura modular para despliegue, monitoreo y optimización de LLMs en producción.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>LLMOps</span>
+                            <span>Framework</span>
+                        </div>
+                    </div>
+                    <div class="project-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                    </div>
+                </a>
+
+                <a href="https://github.com/Robert-Gomez-AI/Escher" target="_blank" rel="noopener" class="project-card reveal">
+                    <div class="project-number">02</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Escher</h3>
+                        <p class="project-desc">Framework para crear videos matemáticos basados en procesamiento de lenguaje natural. La intersección perfecta entre arte, matemáticas y NLP.</p>
+                        <div class="project-tech">
+                            <span>NLP</span>
+                            <span>Math Viz</span>
+                            <span>Video Gen</span>
+                        </div>
+                    </div>
+                    <div class="project-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                    </div>
+                </a>
+
+                <a href="https://github.com/Robert-Gomez-AI/Neurons-and-manifolds" target="_blank" rel="noopener" class="project-card reveal">
+                    <div class="project-number">03</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Neurons & Manifolds</h3>
+                        <p class="project-desc">Del spike al grupo fundamental. Investigación en la intersección de neurociencia computacional y topología algebraica.</p>
+                        <div class="project-tech">
+                            <span>Neuroscience</span>
+                            <span>Topology</span>
+                            <span>Research</span>
+                        </div>
+                    </div>
+                    <div class="project-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                    </div>
+                </a>
+
+                <a href="https://github.com/Robert-Gomez-AI/RAG" target="_blank" rel="noopener" class="project-card reveal">
+                    <div class="project-number">04</div>
+                    <div class="project-content">
+                        <h3 class="project-title">RAG Framework</h3>
+                        <p class="project-desc">Implementación completa de Retrieval Augmented Generation. Pipeline end-to-end para potenciar LLMs con conocimiento contextual.</p>
+                        <div class="project-tech">
+                            <span>RAG</span>
+                            <span>LLM</span>
+                            <span>Retrieval</span>
+                        </div>
+                    </div>
+                    <div class="project-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                    </div>
+                </a>
+
+                <a href="https://github.com/Robert-Gomez-AI/jet_ml" target="_blank" rel="noopener" class="project-card reveal">
+                    <div class="project-number">05</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Jet ML</h3>
+                        <p class="project-desc">Framework para prototipado rápido de machine learning. De la idea al modelo en tiempo récord con abstracciones inteligentes.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>ML</span>
+                            <span>Fast Prototyping</span>
+                        </div>
+                    </div>
+                    <div class="project-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                    </div>
+                </a>
+
+                <a href="https://github.com/Robert-Gomez-AI/QuantumComputing" target="_blank" rel="noopener" class="project-card reveal">
+                    <div class="project-number">06</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Quantum Computing</h3>
+                        <p class="project-desc">Materiales y experimentos en computación cuántica. Desde fundamentos teóricos hasta implementaciones de algoritmos cuánticos.</p>
+                        <div class="project-tech">
+                            <span>Quantum</span>
+                            <span>Qiskit</span>
+                            <span>Algorithms</span>
+                        </div>
+                    </div>
+                    <div class="project-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                    </div>
+                </a>
+            </div>
+            <div class="projects-cta reveal">
+                <a href="https://github.com/Robert-Gomez-AI?tab=repositories" target="_blank" rel="noopener" class="btn btn-outline">
+                    Ver todos los 33 repositorios
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research & Education Section -->
+    <section class="section publications" id="publications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">04 — Research & Education</span>
+                <h2 class="section-title">Compartiendo<br><span class="gradient-text">conocimiento</span></h2>
+            </div>
+            <div class="research-grid">
+                <div class="research-card reveal">
+                    <div class="research-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                    </div>
+                    <h3>Intro to Deep Learning Research</h3>
+                    <p>Hub completo de recursos para investigación en deep learning. Desde fundamentos hasta papers de frontera.</p>
+                    <a href="https://github.com/Robert-Gomez-AI/Intro2DLResearch" target="_blank" rel="noopener" class="research-link">Explorar recurso →</a>
+                </div>
+                <div class="research-card reveal">
+                    <div class="research-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                    </div>
+                    <h3>Intro to Diffusion Models</h3>
+                    <p>Material educativo sobre modelos de difusión: la arquitectura detrás de DALL-E, Stable Diffusion y más.</p>
+                    <a href="https://github.com/Robert-Gomez-AI/Intro2DiffusionModels" target="_blank" rel="noopener" class="research-link">Explorar recurso →</a>
+                </div>
+                <div class="research-card reveal">
+                    <div class="research-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                    </div>
+                    <h3>Diffusion Papers Collection</h3>
+                    <p>Colección curada de papers sobre modelos de difusión. Estado del arte en generación con modelos probabilísticos.</p>
+                    <a href="https://github.com/Robert-Gomez-AI/diffusion_papers" target="_blank" rel="noopener" class="research-link">Explorar recurso →</a>
+                </div>
+                <div class="research-card reveal">
+                    <div class="research-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                    </div>
+                    <h3>Information Geometry</h3>
+                    <p>Investigación en geometría de la información: variedades estadísticas, conexiones y métricas de Fisher.</p>
+                    <a href="https://github.com/Robert-Gomez-AI/Information_geometry" target="_blank" rel="noopener" class="research-link">Explorar recurso →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / What I Can Do For You -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">05 — Servicios</span>
+                <h2 class="section-title">Cómo puedo<br><span class="gradient-text">ayudarte</span></h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-number">I</div>
+                    <h3>Consultoría en IA</h3>
+                    <p>Estrategia, arquitectura y roadmap de IA para tu empresa. Desde la evaluación de viabilidad hasta la implementación y despliegue.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-number">II</div>
+                    <h3>Desarrollo de Soluciones ML</h3>
+                    <p>Diseño y desarrollo de modelos de machine learning a medida. Computer vision, NLP, modelos generativos y sistemas de recomendación.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-number">III</div>
+                    <h3>Research & Desarrollo</h3>
+                    <p>Investigación aplicada en IA de frontera. Modelos generativos, geometría de la información y computación cuántica para tu caso de uso.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-number">IV</div>
+                    <h3>Formación & Workshops</h3>
+                    <p>Capacitación para equipos técnicos. Deep learning, MLOps, LLMs y las últimas tendencias en IA con enfoque práctico.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="section-header">
+                    <span class="section-tag">06 — Contacto</span>
+                    <h2 class="section-title contact-title">¿Tienes un proyecto<br>en mente? <span class="gradient-text">Hablemos.</span></h2>
+                </div>
+                <p class="contact-desc reveal">
+                    Ya sea que necesites consultoría en IA, un CTO técnico para tu startup,
+                    o un investigador que lleve tu idea al siguiente nivel — estoy aquí para ayudarte.
+                </p>
+                <div class="contact-links reveal">
+                    <a href="https://github.com/Robert-Gomez-AI" target="_blank" rel="noopener" class="contact-link">
+                        <div class="contact-link-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </div>
+                        <div>
+                            <span class="contact-link-label">GitHub</span>
+                            <span class="contact-link-value">Robert-Gomez-AI</span>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/robert-gomez-6361571b6/" target="_blank" rel="noopener" class="contact-link">
+                        <div class="contact-link-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </div>
+                        <div>
+                            <span class="contact-link-label">LinkedIn</span>
+                            <span class="contact-link-value">Robert Gomez</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="contact-cta reveal">
+                    <a href="https://www.linkedin.com/in/robert-gomez-6361571b6/" target="_blank" rel="noopener" class="btn btn-primary btn-large">
+                        <span>Enviar mensaje</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">{</span>
+                    <span class="logo-text">RG</span>
+                    <span class="logo-bracket">}</span>
+                </div>
+                <p class="footer-text">
+                    Diseñado con matemáticas y café.
+                </p>
+                <p class="footer-copyright">
+                    &copy; 2026 Robert Gomez. Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
